@@ -1,0 +1,302 @@
+/* ESTILO GERAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+    .poppins-thin {
+        font-family: "Poppins", system-ui;
+        font-weight: 100;
+        font-style: normal;
+      }
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+}
+
+h2.titulo{
+  color: #fff;
+  font-size: 34px;
+   text-align: center;
+}
+
+button:hover{
+  box-shadow: 0px 0px 8px 	#8B4513;
+  transform: scale(1.05);
+}
+
+/* ESTILO CABECALHO */
+
+header{
+    padding: 40px 4%;
+}
+
+header  > .interface{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+header a{
+    color:#fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #CD853F;
+    transform: scale(1.05);
+}
+
+header nav.menu-desktop ul{
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.andry-contato button{
+    padding: 10px 35px  ;
+    font-size: 15px;
+    font-weight: 600;
+    color:	#fff;
+    background-color: #CD853F;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/*MENU BOMILE*/
+
+.menu-abrir i{
+  color: #CD853F;
+  font-size: 40px;
+  display: none;
+}
+
+.menu-mobile{
+  background-color: #000;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999999;
+  width: 0%;
+  overflow: hidden;
+  transition: .5s;
+  display: none;
+}
+
+.menu-mobile.open-menu{
+  width: 70%;
+}
+
+.menu-mobile.open-menu ~ .overlay-menu{
+  display: block;
+}
+
+.menu-mobile .andry-fechar{
+  padding: 20px 4%;
+}
+
+.menu-mobile .andry-fechar i{
+  color: #CD853F;
+  font-size: 40px;
+}
+
+.menu-mobile nav ul{
+  text-align: right;
+}
+
+.menu-mobile nav ul li a{
+  color: #fff;
+  font-size: 25px;
+  font-weight: 300;
+  padding: 20px 8%;
+  display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+  background-color: #CD853F;
+  color: #000;
+}
+
+.overlay-menu{
+  background-color: #00000094;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8888;
+  display: none;
+}
+
+
+ /* topo do site */
+ section.topo-do-site{
+  padding: 40px 4%;
+ }
+
+ section.topo-do-site .flex{
+  align-items:  center;
+  justify-content: center;
+  gap: 90px;
+ }
+ .topo-do-site .text-topo-do-site h1{
+color: #CD853F;
+font-size: 42px;
+line-height: 40px;
+ }
+.img-topo-do-site img{
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+  margin: 65px 0;
+}
+
+.topo-do-site .text-topo-do-site p{
+  color: #ffffffbd;
+  margin: 40px 0 ;
+  font-size: 20px;
+}
+
+@keyframes flutuar{
+  0%{
+    top: 0;
+  }
+  100%{
+    top: 30px;
+  }
+}
+
+section .especialidades{
+  padding: 40px 4%;
+}
+
+section.especialidades .flex{
+  gap: 60px;
+}
+
+.especialidades .especialidades-box{
+  color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 40px;
+  transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 15px 	#8B4513;
+}
+
+.especialidades .especialidades-box i{
+  font-size: 60px;
+  color: #CD853F;
+}
+
+.especialidades .especialidades-box h3{
+  font-size: 23px;
+  margin: 15px 0;
+  color: 	#CD853F;
+}
+
+/*/SOBRE/*/
+
+section.sobre{
+  padding: 80px 4%;
+}
+
+section.sobre .flex{
+  align-items: center;
+  gap: 60px;
+}
+
+.img-sobre img{
+  width: 350px;
+  border-radius: 15px;
+}
+
+.sobre .txt-sobre{
+  color: #fff;
+}
+
+.sobre .txt-sobre h2{
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+  color: #CD853F;
+  display: block;
+}
+
+.sobre .txt-sobre p{
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.sobre .txt-sobre .andry-social button{
+width: 60px;
+height: 60px;
+border-radius: 50%;
+border: none;
+color:rgb(192, 94, 13);
+font-size: 20px;
+cursor: pointer;
+margin: 0 8px;
+transition: .2s;
+}
+
+@media screen and (max-width: 830px) {
+  .flex{
+    flex-direction: column;
+  }
+  .topo-do-site .text-topo-do-site h1{
+    text-align: center;
+  }
+
+.topo-do-site .flex{
+  flex-direction: column-reverse;
+} 
+  .menu-desktop, .andry-contato{
+    display: none;
+  }
+  .menu-mobile, .menu-abrir i{
+    display: block;
+  }
+  .img-sobre img{
+    padding: 0 4%;
+    border-radius: 40px;
+  }
+  .sobre .txt-sobre h2{
+    text-align: center;
+  }
+  .sobre .txt-sobre p{
+    padding: 0 5%;
+  }
+  .especialidades .especialidades-box h2{
+    margin: 10%;
+  }
+  .especialidades .especialidades-box{
+  margin: 5% 6%;
+  } 
+}
