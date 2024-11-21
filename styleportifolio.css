@@ -1,0 +1,214 @@
+/* ESTILO GERAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+    .poppins-thin {
+        font-family: "Poppins", system-ui;
+        font-weight: 100;
+        font-style: normal;
+      }
+
+body{
+    background-color: #f6f7f8;
+    height: 100vh;
+}
+
+.interface{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+
+.flex{
+  display: flex;
+}
+
+/* ESTILO CABECALHO */
+
+ /* topo do site */
+ section.topo-do-site{
+  padding: 40px 4%;
+ }
+
+ section.topo-do-site .flex{
+  align-items:  center;
+  justify-content: center;
+  gap: 90px;
+ }
+ .topo-do-site .text-topo-do-site h1{
+color: #6e5741;
+font-size: 42px;
+line-height: 40px;
+ }
+.img-topo-do-site img{
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+  margin: 65px 0;
+}
+
+.topo-do-site .text-topo-do-site p{
+  color: #222222;
+  margin: 40px 0 ;
+  font-size: 20px;
+}
+
+
+section .especialidades{
+  padding: 40px 4%;
+}
+
+.especialidades .interface h2{
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  font-size: 30px;
+}
+
+section.especialidades .flex{
+
+  gap: 60px;
+}
+
+.especialidades .interface h2{
+color: #634218 ;
+}
+
+.especialidades .especialidades-box{
+  color: #222222;
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 40px;
+  transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 15px 	black;
+}
+
+.especialidades .especialidades-box i{
+  font-size: 60px;
+  color: #634218 ;
+}
+
+.especialidades .especialidades-box h3{
+  font-size: 23px;
+  margin: 15px 0;
+  color: 	#634218;
+}
+
+/*/SOBRE/*/
+
+section.sobre{
+  padding: 80px 4%;
+}
+
+section.sobre .flex{
+  align-items: center;
+  gap: 60px;
+}
+
+.img-sobre img{
+  width: 350px;
+  border-radius: 15px;
+}
+
+.sobre .txt-sobre{
+  color: #222222;
+}
+
+.sobre .txt-sobre h2{
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+  color: #694b35;
+  display: block;
+}
+
+.sobre .txt-sobre p{
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.sobre .txt-sobre .andry-social button{
+width: 60px;
+height: 60px;
+border-radius: 50%;
+border: none;
+color:#634218;
+background-color: #ecebea;
+font-size: 20px;
+cursor: pointer;
+margin: 20px 8px;
+transition: .2s;
+}
+
+.sobre .txt-sobre .andry-social button:hover{
+  background-color: #634218;
+  color: #fff;
+  transition: 0.6s;
+}
+
+.andry-contato button{
+  padding: 10px 35px  ;
+  margin: 5%;
+  font-size: 15px;
+  font-weight: 600;
+  color:	#d6c5a9;
+  background-color: #3e2b05;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+/* SERVICOS */
+
+.servicos .interface .flex{
+  display: flex;
+  justify-content: center;
+}
+
+.servicos .interface h2{
+  color: #3e2b05;
+  font-size: 50px;
+  margin-top: 15%;
+  
+}
+
+.servicos .servicos-box{
+  font-size: 30px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.servicos .servicos-box li{
+  margin: 15px;
+  color: #634218;
+  padding: 3px;
+  transition: transform 0.5s ease;
+
+}
+
+.servicos .servicos-box li.mover{
+  transform: translateX(100px);
+}
+
+.servicos .servicos-box li:hover{
+  transform: translateX(-10px);
+}
+
+.servicos .servicos-box img{
+  width: 320px;
+  border-radius: 10px;
+}
+  
